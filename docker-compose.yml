@@ -1,0 +1,20 @@
+# ENV GOOGLE_APPLICATION_CREDENTIALS=./data/visionapi-266317-bed9b5652273.json
+
+version: '3.7'
+
+services:
+  lavso-backend-application:
+    # image: in28min/todo-web-application-mysql:0.0.1-SNAPSHOT
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    restart: always
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: ./data/visionapi-266317-bed9b5652273.json
+    networks:
+      - lavso-backend-application-network
+
+networks:
+  lavso-backend-application-network:

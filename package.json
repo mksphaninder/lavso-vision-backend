@@ -1,0 +1,20 @@
+{
+  "name": "label-detection",
+  "version": "1.0.0",
+  "description": "This a service that will be used to detect the image.",
+  "author": "krishna",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^2.1.1",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "formidable": "^1.2.2",
+    "nodemon": "^2.0.4"
+  }
+}

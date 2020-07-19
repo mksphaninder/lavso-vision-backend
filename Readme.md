@@ -1,0 +1,1 @@
+`export GOOGLE_APPLICATION_CREDENTIALS=/home/krishna/google-vision-api-credentials/visionapi-266317-bed9b5652273.json`
